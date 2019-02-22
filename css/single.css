@@ -1,0 +1,436 @@
+@font-face {
+    font-family: "Magical Mystery Tour";
+    src: url("../fonts/MagicalMysteryTour.ttf");
+}
+
+@font-face {
+    font-family: "Sgt Peppers Outline";
+    src: url("../fonts/SgtPeppersOutline.ttf");
+}
+
+@font-face {
+    font-family: "Magical Mystery Tour Outline Sh";
+    src: url("../fonts/MagicalMysteryTourOutlineSh.ttf");
+}
+
+@font-face {
+    font-family: "Yellow Submarine";
+    src: url("../fonts/yellowsubmarine.ttf");
+}
+
+@font-face {
+    font-family: "Hard Days Night";
+    src: url("../fonts/AHDN.ttf");
+}
+
+@font-face {
+    font-family: "Beatles";
+    src: url("../fonts/BOOTLE__.TTF");
+}
+
+
+
+a{
+    color: darkblue;
+    cursor: url(../images/hand-copy.png), auto;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-image: url("../images/pattern.jpg");
+    background-repeat: repeat;
+    cursor: url(../images/ys-pointer.png), auto;
+}
+
+
+
+#wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    text-align: center;
+    width: 80%;
+    padding-bottom: 20%;
+}
+
+p{
+
+    margin: 10px 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Beatles";
+    color: darkblue;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+
+h2, h3 {
+    text-align: center;
+    font-family: "Magical Mystery Tour Outline Sh";
+    color: yellow;
+    margin-top: 1rem;
+}
+
+h4 {
+    text-align: center;
+    font-family: "Magical Mystery Tour";
+    color: darkred;
+    font-size: 20px;
+    margin-top: 1rem;
+}
+
+h5 {
+    text-align: center;
+    font-family: "Sgt Peppers Outline";
+    color: darkolivegreen;
+    font-size: 25px;
+    margin: 0;
+    margin-top: 2rem;
+
+}
+
+p {
+    text-align: center;
+    font-family: "Magical Mystery Tour";
+    color: darkgreen;
+
+}
+
+.art {
+
+    height: 180px;
+    display: inline-block;
+    margin: 1% 3%;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+
+}
+
+.art:hover {
+    transform: scale(1.2);
+    cursor: url(../images/hand-copy.png), auto;
+}
+
+#boob {
+    position: absolute;
+    width: 10%;
+    z-index: 300;
+    margin-top: -3%;
+    margin-left: 2%;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    transform: rotate(-20deg);
+    animation-name: rotate;
+    animation-delay: 0.3s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-origin: 50% 0%;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(40deg);
+    }
+}
+@keyframes rotate-container {
+    0% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(-40deg);
+    }
+}
+
+.down{
+    font-family: "Magical Mystery Tour Outline Sh";
+    font-size: 20px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    }
+
+#d2:hover{
+    transform: scale(1.2);
+}
+#d1:hover{
+    transform: scale(1.2);
+}
+
+#pod {
+    width: 50px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+
+}
+
+#pod:hover {
+    transform: scale(1.2);
+}
+
+#menu {
+
+    margin-top: 1%;
+    text-align: center;
+}
+
+#home {
+    width: 100px;
+    margin: 0 5%;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+#home:hover {
+
+    transform: scale(1.2) rotateY(180deg) ;
+}
+
+#right {
+    width: 100px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+#right:hover{
+    transform: scale(1.2);
+    position: relative;
+    z-index: 100;
+    -webkit-animation: glowmove 5s; /* Safari 4.0 - 8.0 */
+    animation: glowmove 5s;
+}
+
+@-webkit-keyframes glowmove {
+    from {left: 0px;}
+    to {left: 5%;}
+}
+
+@keyframes glowmove {
+    from {left: 0px;}
+    to {left: 5%;}
+}
+
+#left {
+    width: 100px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+#left:hover{
+    transform: scale(1.2);
+    position: relative;
+    z-index: 100;
+    -webkit-animation: glowemove 5s; /* Safari 4.0 - 8.0 */
+    animation: glowemove 5s;
+}
+
+@-webkit-keyframes glowemove {
+    from {right: 0px;}
+    to {right: 5%;}
+}
+
+@keyframes glowemove {
+    from {right: 0px;}
+    to {right: 5%;}
+}
+
+ul{
+    list-style: none;
+    margin: 0px;
+}
+
+ol {
+    text-align: justify;
+    margin-left: 20%;
+    font-family: "Magical Mystery Tour";
+    color: darkblue;
+}
+
+ol p {
+    text-align: left;
+    color: darkblue;
+}
+
+li{
+    padding: 3px;
+}
+
+.link {
+    width: 250px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+.link:hover{
+    transform: scale(1.2);
+    cursor: url(../images/hand-copy.png), auto;
+}
+
+#blue {
+    margin-right: 10%;
+    float: right;
+}
+
+#blue img {
+    width: 15%;
+    position: absolute;
+    z-index: 400;
+    top: 5%;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+#blue img:hover{
+    transform: scale(1.2);
+
+}
+
+
+footer {
+    font-family: "Yellow Submarine";
+    font-size: large;
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    background: seagreen;
+    color: yellow;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-top: solid 3px yellow;
+
+}
+
+#foot{
+    display: inline-block;
+    float: right;
+    margin-right: 5%;
+}
+
+
+#bz {
+    margin-right: 2%;
+    margin-left: 20%;
+    display: inline-block;
+
+}
+
+#disc {
+    margin-left: 2%;
+
+    display: inline-block;
+
+}
+
+#stamp {
+    display: inline-block;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+footer img:hover {
+
+    transform: scale(1.2);
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+
+/*modal image */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(25,25,112); /* Fallback color */
+    background-color: rgba(25,25,112,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    margin-left: 25%;
+    display: block;
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+        margin-left: 5%;
+        max-width: 650px;
+    }
+}

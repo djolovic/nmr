@@ -1,0 +1,392 @@
+@font-face {
+	font-family: "Magical Mystery Tour";
+	src: url("../fonts/MagicalMysteryTour.ttf");
+}
+
+@font-face {
+	font-family: "Sgt Peppers Outline";
+	src: url("../fonts/SgtPeppersOutline.ttf");
+}
+
+@font-face {
+	font-family: "Magical Mystery Tour Outline Sh";
+	src: url("../fonts/MagicalMysteryTourOutlineSh.ttf");
+}
+
+@font-face {
+	font-family: "Yellow Submarine";
+	src: url("../fonts/yellowsubmarine.ttf");
+}
+
+@font-face {
+	font-family: "Hard Days Night";
+	src: url("../fonts/AHDN.ttf");
+}
+
+@font-face {
+	font-family: "Beatles";
+	src: url("../fonts/BOOTLE__.TTF");
+}
+
+
+#perspective {
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 210px;
+	height: 140px;
+	position: relative;
+	-webkit-perspective: 1100px;
+	perspective: 1100px;
+}
+
+#carousel {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-webkit-transform: rotateY(0deg) translateZ(-288px);
+}
+
+#carousel figure {
+	display: block;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	opacity: 0.9;
+	margin: 12px;
+	text-align: center;
+	cursor: url(../images/jeremy.png), auto;
+	-webkit-transition: opacity 1s, -webkit-transform 1s;
+	-moz-transition: opacity 1s, -moz-transform 1s;
+	-o-transition: opacity 1s, -o-transform 1s;
+	transition: opacity 1s, transform 1s;
+	font-family: "Magical Mystery Tour";
+	font-size: small;
+	color: darkblue;
+}
+
+#glaw {
+	margin-top: 20px;
+	width: 150px;
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+	filter: drop-shadow(5px 5px 5px #222);
+	-webkit-animation: mymove 10s infinite; /* Safari 4.0 - 8.0 */
+	animation: mymove 10s infinite;
+	position: relative;
+	z-index: 100;
+
+}
+
+@-webkit-keyframes mymove {
+	from {left: 0px;}
+	to {left: 100%;}
+}
+
+@keyframes mymove {
+	from {left: 0px;}
+	to {left: 100%;}
+}
+
+
+#sub {
+
+	width: 150px;
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+	filter: drop-shadow(5px 5px 5px #222);
+	-webkit-animation: submove 15s infinite; /* Safari 4.0 - 8.0 */
+	animation: submove 15s infinite;
+	position: absolute;
+	z-index: 200;
+}
+
+@-webkit-keyframes submove {
+	0%       { transform: translatex(0%) translatey(0%) }
+	100%     { transform: translatex(800%) translatey(-700%) }
+}
+
+@keyframes submove {
+	0%       { transform: translatex(0%) translatey(0%) }
+	100%     { transform: translatex(800%) translatey(-700%) }
+}
+
+
+
+html {
+	cursor: url(../images/jeremy.png), auto;
+}
+
+
+
+*
+{
+	padding: 0px;
+	margin: 0px;
+
+}
+
+*:focus
+{
+	outline: none;
+}
+
+a{
+	color: darkblue;
+	cursor: url(../images/Boob-cursor.png), auto;
+	text-decoration: none;
+}
+
+a:hover {
+	color: blue;
+}
+
+/*======================
+	Selection Colour
+========================*/
+
+
+body{
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	width: 100%;
+
+
+}
+#wrapper{
+	position: relative;
+
+}
+
+
+.imgevento-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -100;
+}
+
+
+.imgevento {
+	transform-origin: center center;
+	animation: imgevento 6s ease-in-out alternate infinite;
+}
+
+@keyframes imgevento {
+	0%,
+	100% {
+		transform: skew(0deg, 0deg) scale(1.35, 1.35);
+		filter: saturate(100%) invert(0%);
+	}
+
+	25% {
+		filter: saturate(180%) invert(10%);
+	}
+
+	50% {
+		transform: skew(2deg, 2deg) scale(1.35, 1.35);
+		filter: saturate(100%) invert(0%);
+	}
+
+	75% {
+		filter: saturate(150%) invert(20%);
+	}
+}
+
+h1 {
+	font-family: "Yellow Submarine";
+	color: yellow;
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+	filter: drop-shadow(5px 5px 5px #222);
+}
+
+#container{
+	background: url("../images/beatles-banner-bottom.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 3px solid seagreen;
+	border-radius: 2%;
+	width: 800px;
+	padding: 30px;
+	min-height: 365px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+	filter: drop-shadow(5px 5px 5px #222);
+	position: relative;
+	z-index: 100;
+
+
+}
+
+p{
+
+	margin: 15px 0;
+}
+
+.scrollBox{
+	position: relative;
+	width: 400px;
+	height: 300px;
+	padding-right: 14px;
+	overflow: hidden;
+}
+.scrollbar{
+	position: absolute;
+	width: 6px;
+	height: 100%;
+	
+	right: 0;
+}
+.scrollDragger{
+	position: absolute;
+	background: #ccc;
+	width: 6px;
+	height: 30px;
+
+	cursor: url(../images/Boob-cursor.png), auto;
+	margin-left: -1px;
+	z-index: 2;
+}
+.scrollRail{
+	position: absolute;
+	background: #eee;
+	width: 4px;
+	height: 100%;
+	z-index: 1;
+}
+
+ul{
+	list-style: none;
+	margin: 0px;
+}
+
+.fadein{
+	display: block;
+	float: left;
+	margin-bottom: 15px;
+	color: #fff;
+	font: 40px Edmondsans;
+	text-align: center;
+	padding: 75px 0px;
+	width: 100%;
+	height: 50px;
+	background: #35c52e; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzNWM1MmUiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMGI5ODMwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-radial-gradient(center, ellipse cover,  #35c52e 0%, #0b9830 100%); /* FF3.6+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #35c52e 0%,#0b9830 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #35c52e 0%,#0b9830 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #35c52e 0%,#0b9830 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #35c52e 0%,#0b9830 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35c52e', endColorstr='#0b9830',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+
+#flux_carousel li{
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	width: 145px;
+	height: 145px;
+	background: #35c52e; /* Old browsers */
+}
+#flux_carousel ul:nth-child(2n+2) li{
+	background: #ccc;
+}
+
+.tab{
+	background: #108de4;
+	padding: 20px;
+	color: #eee;
+	border-radius: 5px;
+}
+
+footer {
+	font-family: "Yellow Submarine";
+	font-size: large;
+	position: fixed;
+	bottom: 0;
+	background: seagreen;
+	color: yellow;
+	width: 100%;
+	padding: 30px;
+	text-align: center;
+	border-top: solid 3px yellow;
+
+}
+
+#foot{
+	display: inline-block;
+	float: right;
+	margin-right: 5%;
+}
+
+#jeremy{
+	display: inline;
+	float: left;
+}
+#jeremy img{
+	width: 150px;
+	position: relative;
+	z-index: 300;
+	bottom: 70px;
+	margin-left: 70px;
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+	filter: drop-shadow(5px 5px 5px #222);
+	transition: transform 2s;
+	transform-style: preserve-3d;
+
+}
+
+#jeremy img:hover{
+	transform: rotateY(180deg);
+}
+
+#blue {
+	display: inline;
+	float: right;
+}
+
+#blue img {
+	width: 250px;
+	position: relative;
+	z-index: 300;
+	bottom: 120px;
+	margin-right: 50px;
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+	filter: drop-shadow(5px 5px 5px #222);
+}
+
+#blue img:hover{
+	transform: scale(1.2);
+}
+
+#bz {
+	margin-right: 2%;
+	margin-left: 20%;
+	display: inline-block;
+
+}
+
+#disc {
+	margin-left: 2%;
+
+	display: inline-block;
+
+}
+
+#stamp {
+	display: inline-block;
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
+footer img:hover {
+
+	transform: scale(1.2);
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+	filter: drop-shadow(5px 5px 5px #222);
+}
+
+

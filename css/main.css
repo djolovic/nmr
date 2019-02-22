@@ -1,0 +1,311 @@
+@font-face {
+    font-family: "Magical Mystery Tour";
+    src: url("../fonts/MagicalMysteryTour.ttf");
+}
+
+@font-face {
+    font-family: "Sgt Peppers Outline";
+    src: url("../fonts/SgtPeppersOutline.ttf");
+}
+
+@font-face {
+    font-family: "Magical Mystery Tour Outline Sh";
+    src: url("../fonts/MagicalMysteryTourOutlineSh.ttf");
+}
+
+@font-face {
+    font-family: "Yellow Submarine";
+    src: url("../fonts/yellowsubmarine.ttf");
+}
+
+@font-face {
+    font-family: "Hard Days Night";
+    src: url("../fonts/AHDN.ttf");
+}
+
+@font-face {
+    font-family: "Beatles";
+    src: url("../fonts/BOOTLE__.TTF");
+}
+
+
+
+a{
+    color: darkblue;
+    cursor: url(../images/hand-copy.png), auto;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-image: url("../images/yellow-sub-screengrab-crop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    cursor: url(../images/ys-pointer.png), auto;
+}
+
+#wrapper{
+
+    text-align: center;
+    padding-bottom: 20%;
+}
+
+p{
+
+    margin: 15px 0;
+}
+
+h1 {
+    font-family: "Yellow Submarine";
+    color: yellow;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+h1:hover{
+    transform: scale(1.2);
+}
+
+h2, h3 {
+    text-align: center;
+    font-family: "Magical Mystery Tour Outline Sh";
+    color: yellow;
+    margin-top: 1rem;
+}
+
+h4 {
+    text-align: center;
+    font-family: "Magical Mystery Tour";
+    color: darkred;
+    font-size: 20px;
+    margin-top: 1rem;
+}
+
+p {
+    text-align: center;
+    font-family: "Magical Mystery Tour";
+    color: darkred;
+    margin-top: 1rem;
+}
+
+.container {
+    display: block;
+    align-content: center;
+
+}
+
+.fan {
+    display: block;
+
+}
+
+.candy {
+    display: block;
+
+
+}
+
+
+#boob {
+    position: absolute;
+    z-index: 300;
+    margin-top: -5%;
+    margin-left: 5%;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    transform: rotate(-20deg);
+    animation-name: rotate;
+    animation-delay: 0.3s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-origin: 50% 0%;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(40deg);
+    }
+}
+@keyframes rotate-container {
+    0% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(-40deg);
+    }
+}
+
+
+ul{
+    list-style: none;
+    margin: 0px;
+}
+
+.link {
+    width: 250px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+.link:hover{
+    transform: scale(1.2);
+    cursor: url(../images/hand-copy.png), auto;
+}
+
+.rev {
+    height: 100px;
+    display: inline-block;
+    margin: 1%;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+
+}
+.rev:hover {
+    transform: scale(1.2);
+    cursor: url(../images/hand-copy.png), auto;
+}
+
+footer {
+    font-family: "Yellow Submarine";
+    font-size: large;
+    position: fixed;
+    bottom: 0;
+    background: seagreen;
+    color: yellow;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    border-top: solid 3px yellow;
+
+}
+
+#foot{
+    display: inline-block;
+    float: right;
+    margin-right: 5%;
+}
+
+
+#bz {
+    margin-right: 2%;
+    margin-left: 20%;
+    display: inline-block;
+
+}
+
+#disc {
+    margin-left: 2%;
+
+    display: inline-block;
+
+}
+
+#stamp {
+    display: inline-block;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+footer img:hover {
+
+    transform: scale(1.2);
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+
+
+
+/*modal image */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(25,25,112); /* Fallback color */
+    background-color: rgba(25,25,112,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    margin-left: 35%;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
